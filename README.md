@@ -13,10 +13,14 @@ $ bundle install --path vendor/bundle
 install fluent-plugin
 
 ```
-# add line to Gemfile
-$ echo "gem "fluent-plugin-rewrite-tag-filter"" >> Gemfile
+# append lines to Gemfile like the resule of cat command
+$ vim Gemfile
+$ cat
+source 'https://rubygems.org/'
+gem "fluentd"
+gem "fluent-plugin-rewrite-tag-filter"
 
-# install them
+# install plugins
 $ bundle install
 ```
 
